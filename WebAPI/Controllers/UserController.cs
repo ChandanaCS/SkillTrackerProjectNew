@@ -73,6 +73,15 @@ namespace WebAPI.Controllers
             return Ok(getUserDetailsModel);
         }
 
+        //demo new
+
+        [Route("api/user/getboolresult")]
+        public IHttpActionResult GetBoolResult()
+        {
+            return Ok<string>("true");
+        }
+    
+        
         [HttpPost]
         [Route("api/user/PostNewUser")]
         public IHttpActionResult PostNewUser([FromBody] UserModel newUser)      //View -> Admin
